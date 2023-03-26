@@ -2,7 +2,7 @@ const {I} = inject();
 
 module.exports = {
     locators: {
-        buttonHomepageText: 'Go to Homepage',
+        buttonHomepageLabel: 'Go to Homepage',
     },
     
     visit() {
@@ -11,7 +11,7 @@ module.exports = {
     },
 
     clickBackToHomepage() {
-        I.click(this.locators.buttonHomepageText, '#history')
+        I.click(this.locators.buttonHomepageLabel, '#history')
         return this;
     }
 }
